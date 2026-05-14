@@ -2,82 +2,50 @@
 
   <div class="hero-info">
 
-    <article class="hero-card">
+    <h3 class="hero-info__title">
+      РАБОТАЕМ В НОГИНСКЕ
+    </h3>
 
-      <span class="hero-card__label">
-        состояние устройства
-      </span>
+    <p class="hero-info__subtitle">
+      и ближайшим районам
+    </p>
 
-      <div class="hero-card__rows">
+    <div class="hero-info__map"></div>
 
-        <div class="hero-card__row">
-          <span>стики</span>
-          <strong>износ 12%</strong>
-        </div>
+    <div class="hero-info__list">
 
-        <div class="hero-card__row">
-          <span>кнопки</span>
-          <strong class="green">
-            ok
-          </strong>
-        </div>
+      <div class="hero-info__item">
 
-        <div class="hero-card__row">
-          <span>триггеры</span>
-          <strong>износ 45%</strong>
-        </div>
+        <span>✓</span>
+
+        Сервис в центре города
 
       </div>
 
-    </article>
+      <div class="hero-info__item">
 
-    <article class="hero-card">
+        <span>✓</span>
 
-      <span class="hero-card__label">
-        причины обращений
-      </span>
-
-      <div class="hero-bars">
-
-        <div class="hero-bars__item">
-
-          <span>
-            дрифт стиков
-          </span>
-
-          <div class="hero-bars__line">
-            <i style="width: 72%"></i>
-          </div>
-
-        </div>
-
-        <div class="hero-bars__item">
-
-          <span>
-            не заряжается
-          </span>
-
-          <div class="hero-bars__line">
-            <i style="width: 34%"></i>
-          </div>
-
-        </div>
-
-        <div class="hero-bars__item">
-
-          <span>
-            перегрев
-          </span>
-
-          <div class="hero-bars__line">
-            <i style="width: 58%"></i>
-          </div>
-
-        </div>
+        Удобная транспортная доступность
 
       </div>
 
-    </article>
+      <div class="hero-info__item">
+
+        <span>✓</span>
+
+        Рядом с остановками
+
+      </div>
+
+    </div>
+
+    <a
+      href="#contacts"
+      class="hero-info__button"
+    >
+      Как нас найти
+    </a>
 
   </div>
 

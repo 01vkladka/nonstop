@@ -1,6 +1,7 @@
 ---
 import './hero.scss';
-import LeadPopup from '@components/ui/LeadPopup/LeadPopup.vue';
+
+import Button from '@components/ui/button/Button.astro';
 import HeroInfo from './HeroInfo.vue';
 ---
 
@@ -11,7 +12,7 @@ import HeroInfo from './HeroInfo.vue';
   <div class="hero__background">
 
     <img
-      src="/images/hero.webp"
+      src={`${import.meta.env.BASE_URL}images/hero.webp`}
       alt=""
       loading="eager"
       decoding="async"
@@ -23,57 +24,114 @@ import HeroInfo from './HeroInfo.vue';
 
   <div class="hero__overlay"></div>
 
-  <div class="hero__noise"></div>
+  <div class="hero__gradient"></div>
 
   <div class="container">
 
-    <div class="hero__layout">
+    <div class="hero__wrapper">
 
       <!-- LEFT -->
 
       <div class="hero__content">
 
         <div class="hero__badge">
-
-          <span></span>
-
-          мастерская игровых приставок
-
+          БЫСТРО • ЧЕСТНО • С ГАРАНТИЕЙ
         </div>
 
         <h1 class="hero__title">
-          РЕМ
-          <br />
-          КОНСОЛЬ
+
+          РЕМОНТ ТЕХНИКИ,
+          <span>КОТОРАЯ НУЖНА</span>
+          КАЖДЫЙ ДЕНЬ
+
         </h1>
 
-        <h2 class="hero__subtitle">
-          Ремонт PlayStation,
-          Xbox и геймпадов
-        </h2>
-
         <p class="hero__description">
-          Диагностика, пайка HDMI,
-          чистка, перегрев, питание
-          и восстановление игровых приставок.
+
+          Чиним компьютеры, телефоны,
+          телевизоры и другую технику.
+          Работаем без выходных
+          и по адекватным ценам.
+
         </p>
 
         <div class="hero__actions">
 
-          <div class="hero__actions">
+          <Button text="Оставить заявку" />
 
-            <LeadPopup
-              button-text="оставить заявку"
-              client:load
-            />
-          
-            <a
-              href="tel:+79999999999"
-              class="hero__button hero__button--secondary"
-            >
-              позвонить
-            </a>
-          
+          <a
+            href="#"
+            class="hero__button hero__button--secondary"
+          >
+            Прайс-лист
+          </a>
+
+        </div>
+
+        <div class="hero__features">
+
+          <div class="hero__feature">
+
+            <div class="hero__feature-icon">
+              ⌕
+            </div>
+
+            <div>
+
+              <strong>Диагностика</strong>
+
+              <span>от 500 ₽</span>
+
+            </div>
+
+          </div>
+
+          <div class="hero__feature">
+
+            <div class="hero__feature-icon">
+              ↺
+            </div>
+
+            <div>
+
+              <strong>Ремонт</strong>
+
+              <span>от 1 дня</span>
+
+            </div>
+
+          </div>
+
+          <div class="hero__feature">
+
+            <div class="hero__feature-icon">
+              ✓
+            </div>
+
+            <div>
+
+              <strong>Гарантия</strong>
+
+              <span>до 12 месяцев</span>
+
+            </div>
+
+          </div>
+
+          <div class="hero__feature">
+
+            <div class="hero__feature-icon">
+              ₽
+            </div>
+
+            <div>
+
+              <strong>Честные цены</strong>
+
+              <span>без доплат</span>
+
+            </div>
+
           </div>
 
         </div>
@@ -82,7 +140,7 @@ import HeroInfo from './HeroInfo.vue';
 
       <!-- RIGHT -->
 
-      <HeroInfo client:load />
+      <HeroInfo />
 
     </div>
 

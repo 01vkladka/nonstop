@@ -1,7 +1,7 @@
 ---
 import './header.scss';
 
-import AppButton from '@components/ui/button/button.vue';
+import Button from '@components/ui/button/Button.astro';
 ---
 
 <header class="header">
@@ -16,17 +16,26 @@ import AppButton from '@components/ui/button/button.vue';
         href="/"
         class="header__logo"
       >
-        РЕМКОНСОЛЬ<span>.РФ</span>
+
+        <span class="header__logo-icon">
+          ⚙
+        </span>
+
+        <div class="header__logo-text">
+
+          <strong>NON-STOP</strong>
+
+          <span>СЕРВИС</span>
+
+        </div>
+
       </a>
 
       <!-- ACTION -->
 
       <div class="header__action">
 
-        <AppButton
-          client:load
-          text="оставить заявку"
-        />
+        <Button text="Связаться" />
 
       </div>
 

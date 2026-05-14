@@ -1,6 +1,16 @@
 ---
 import '@styles/globals.scss';
 
+// Component styles (preload before client-side rendering)
+import '@components/sections/Repairs/Repairs.scss';
+import '@components/sections/Process/Process.scss'; 
+import '@components/sections/Hero/hero.scss';
+import '@components/sections/Hero/hero-info.scss';
+import '@components/sections/MicroFooter/MicroFooter.scss';
+import '@components/ui/button/button.scss';
+import '@components/ui/LeadPopup/lead-popup.scss';
+import '@components/layout/header.scss';
+
 import LeadPopup from '@components/ui/LeadPopup/LeadPopup.vue';
 ---
 
@@ -45,7 +55,7 @@ import LeadPopup from '@components/ui/LeadPopup/LeadPopup.vue';
 
     <!-- GLOBAL POPUP -->
 
-    <LeadPopup client:load />
+    <LeadPopup client:only="vue" />
 
   </body>
 

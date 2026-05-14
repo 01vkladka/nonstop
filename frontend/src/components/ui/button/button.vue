@@ -1,7 +1,7 @@
 <template>
 
   <button
-    class="lead-button"
+    class="ui-button ui-button--primary"
     @click="openPopup"
   >
     {{ text }}

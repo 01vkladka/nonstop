@@ -1,170 +1,283 @@
 <template>
 
-  <section
-    class="process"
-    style="background-image: url('/images/Process_bg.webp')"
-  >
-
-    <div class="process__overlay"></div>
+  <section class="process">
 
     <div class="container">
 
-      <!-- TOP -->
+      <!-- STEPS -->
 
-      <div class="process__top">
+      <div class="process__steps">
 
-        <div class="process__heading">
-
-          <span class="process__label">
-            как мы работаем
-          </span>
+        <div class="process__steps-head">
 
           <h2 class="process__title">
-            ПРОЦЕСС
-            РЕМОНТА
+            КАК МЫ РАБОТАЕМ
           </h2>
+
+          <span class="process__subtitle">
+            ВЕСЬ ПРОЦЕСС ПРОЗРАЧЕН
+          </span>
 
         </div>
 
-        <p class="process__description">
-          Проверяем устройство, согласовываем стоимость,
-          выполняем ремонт и тестируем консоль
-          перед выдачей.
-        </p>
+        <div class="process__timeline">
+
+          <!-- ITEM -->
+
+          <div class="process-step">
+
+            <div class="process-step__icon">
+              ☎
+            </div>
+
+            <div class="process-step__content">
+
+              <h3>
+                Вы оставляете заявку
+              </h3>
+
+              <p>
+                Позвоните нам
+                или оставьте
+                заявку на сайте
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="process-step__arrow">
+            →
+          </div>
+
+          <!-- ITEM -->
+
+          <div class="process-step">
+
+            <div class="process-step__icon">
+              ⌕
+            </div>
+
+            <div class="process-step__content">
+
+              <h3>
+                Диагностика
+              </h3>
+
+              <p>
+                Проводим точную
+                диагностику
+                и озвучиваем стоимость
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="process-step__arrow">
+            →
+          </div>
+
+          <!-- ITEM -->
+
+          <div class="process-step">
+
+            <div class="process-step__icon">
+              💬
+            </div>
+
+            <div class="process-step__content">
+
+              <h3>
+                Согласование
+              </h3>
+
+              <p>
+                Согласуем сроки
+                и стоимость ремонта
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="process-step__arrow">
+            →
+          </div>
+
+          <!-- ITEM -->
+
+          <div class="process-step">
+
+            <div class="process-step__icon">
+              🛠
+            </div>
+
+            <div class="process-step__content">
+
+              <h3>
+                Ремонт
+              </h3>
+
+              <p>
+                Выполняем ремонт
+                любым удобным способом
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="process-step__arrow">
+            →
+          </div>
+
+          <!-- ITEM -->
+
+          <div class="process-step">
+
+            <div class="process-step__icon">
+              ✓
+            </div>
+
+            <div class="process-step__content">
+
+              <h3>
+                Готово!
+              </h3>
+
+              <p>
+                Проверяете устройство
+                и получаете гарантию
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
 
-      <!-- GRID -->
+      <!-- CONTACT -->
 
-      <div class="process__grid">
+      <div class="process__contact">
 
-        <!-- CARD -->
+        <!-- LEFT -->
 
-        <article class="process-card">
+        <div class="process-contact__left">
 
-          <div class="process-card__image">
+          <span class="process-contact__label">
+            ОСТАЛИСЬ ВОПРОСЫ?
+          </span>
 
-            <img
-              src="/images/Process_1.webp"
-              alt=""
-            />
+          <h3 class="process-contact__title">
 
-          </div>
+            МЫ
+            <br />
+            ВСЕГДА
+            <br />
+            НА
+            <br />
+            СВЯЗИ
 
-          <div class="process-card__content">
+          </h3>
 
-            <span class="process-card__number">
-              01
-            </span>
+          <p class="process-contact__text">
 
-            <h3 class="process-card__title">
-              ДИАГНОСТИКА
-            </h3>
+            Подскажем,
+            проконсультируем
+            и найдём лучшее решение
+            для вашей техники.
 
-            <p class="process-card__text">
-              HDMI, питание,
-              перегрев и плата.
-            </p>
+          </p>
 
-          </div>
+          <a
+            href="https://wa.me/79295991486"
+            target="_blank"
+            class="process-contact__button"
+          >
+            Написать в WhatsApp
+          </a>
 
-        </article>
+        </div>
 
-        <!-- CARD -->
+        <!-- CENTER -->
 
-        <article class="process-card process-card--reverse">
+        <div class="process-contact__info">
 
-          <div class="process-card__image">
+          <div class="process-contact__item">
 
-            <img
-              src="/images/Process_2.webp"
-              alt=""
-            />
+            <div class="process-contact__icon">
+              ☎
+            </div>
 
-          </div>
+            <div>
 
-          <div class="process-card__content">
+              <strong>
+                8 (929) 599-14-86
+              </strong>
 
-            <span class="process-card__number">
-              02
-            </span>
+              <span>
+                Ежедневно с 10:00 до 21:00
+              </span>
 
-            <h3 class="process-card__title">
-              СОГЛАСОВАНИЕ
-            </h3>
-
-            <p class="process-card__text">
-              Согласовываем стоимость
-              ремонта заранее.
-            </p>
-
-          </div>
-
-        </article>
-
-        <!-- CARD -->
-
-        <article class="process-card">
-
-          <div class="process-card__image">
-
-            <img
-              src="/images/Process_3.webp"
-              alt=""
-            />
+            </div>
 
           </div>
 
-          <div class="process-card__content">
+          <div class="process-contact__item">
 
-            <span class="process-card__number">
-              03
-            </span>
+            <div class="process-contact__icon">
+              vk
+            </div>
 
-            <h3 class="process-card__title">
-              РЕМОНТ
-            </h3>
+            <div>
 
-            <p class="process-card__text">
-              Пайка и замена
-              компонентов.
-            </p>
+              <strong>
+                vk.com/nonstop_service
+              </strong>
 
-          </div>
+              <span>
+                Отвечаем максимально быстро
+              </span>
 
-        </article>
-
-        <!-- CARD -->
-
-        <article class="process-card process-card--reverse">
-
-          <div class="process-card__image">
-
-            <img
-              src="/images/Process_4.webp"
-              alt=""
-            />
+            </div>
 
           </div>
 
-          <div class="process-card__content">
+          <div class="process-contact__item">
 
-            <span class="process-card__number">
-              04
-            </span>
+            <div class="process-contact__icon">
+              ⌖
+            </div>
 
-            <h3 class="process-card__title">
-              ВЫДАЧА
-            </h3>
+            <div>
 
-            <p class="process-card__text">
-              Тестируем и выдаём
-              консоль с гарантией.
-            </p>
+              <strong>
+                Ногинск, Поселковая 72
+              </strong>
+
+              <span>
+                2 этаж
+              </span>
+
+            </div>
 
           </div>
 
-        </article>
+        </div>
+
+        <!-- MAP -->
+
+        <div class="process-contact__map">
+
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=38.437267%2C55.870461&z=15"
+            frameborder="0"
+          ></iframe>
+
+        </div>
 
       </div>
 

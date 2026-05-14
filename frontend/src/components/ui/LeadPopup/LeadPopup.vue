@@ -1,107 +1,115 @@
 <template>
 
-  <transition name="popup">
+  <!-- POPUP -->
 
-    <div
-      v-if="isOpen"
-      class="lead-popup"
-      @click="closePopup"
-    >
+  <Teleport to="body">
+
+    <Transition name="popup">
 
       <div
-        class="lead-popup__box"
-        @click.stop
+        v-if="isOpen"
+        class="lead-popup"
+        @click.self="closePopup"
       >
 
-        <!-- CLOSE -->
+        <div class="lead-popup__box">
 
-        <button
-          class="lead-popup__close"
-          type="button"
-          @click="closePopup"
-        >
-          ×
-        </button>
+          <!-- CLOSE -->
 
-        <!-- CONTENT -->
-
-        <div class="lead-popup__content">
-
-          <span class="lead-popup__label">
-            заявка
-          </span>
-
-          <h2 class="lead-popup__title">
-            ОБСУДИМ
-            <br />
-            РЕМОНТ
-          </h2>
-
-          <p class="lead-popup__description">
-            Оставьте контакты —
-            ответим сегодня.
-          </p>
-
-          <!-- FORM -->
-
-          <form
-            class="lead-form"
-            @submit.prevent="submitForm"
+          <button
+            class="lead-popup__close"
+            type="button"
+            @click="closePopup"
           >
+            ×
+          </button>
 
-            <input
-              v-model="form.name"
-              type="text"
-              placeholder="Ваше имя"
-            />
+          <!-- CONTENT -->
 
-            <input
-              v-model="form.contact"
-              type="text"
-              placeholder="Telegram или телефон"
-            />
+          <div class="lead-popup__content">
 
-            <textarea
-              v-model="form.message"
-              placeholder="Что случилось?"
-            ></textarea>
+            <span class="lead-popup__label">
+              заявка
+            </span>
 
-            <button
-              class="lead-form__submit"
-              type="submit"
-              :disabled="loading"
+            <h2 class="lead-popup__title">
+
+              ОБСУДИМ
+              <br />
+              РЕМОНТ
+
+            </h2>
+
+            <p class="lead-popup__description">
+
+              Оставьте контакты —
+              ответим сегодня.
+
+            </p>
+
+            <!-- FORM -->
+
+            <form
+              class="lead-form"
+              @submit.prevent="submitForm"
             >
 
-              {{
-                loading
-                  ? 'отправка...'
-                  : 'отправить заявку'
-              }}
+              <input
+                v-model="form.name"
+                type="text"
+                placeholder="Ваше имя"
+              />
 
-            </button>
+              <input
+                v-model="form.contact"
+                type="text"
+                placeholder="Telegram или телефон"
+              />
 
-            <div
-              v-if="success"
-              class="lead-form__success"
-            >
-              Заявка отправлена
-            </div>
+              <textarea
+                v-model="form.message"
+                placeholder="Что случилось?"
+              ></textarea>
 
-          </form>
+              <button
+                class="lead-form__submit"
+                type="submit"
+                :disabled="loading"
+              >
+
+                {{
+                  loading
+                    ? 'отправка...'
+                    : 'отправить заявку'
+                }}
+
+              </button>
+
+              <div
+                v-if="success"
+                class="lead-form__success"
+              >
+                Заявка отправлена
+              </div>
+
+            </form>
+
+          </div>
 
         </div>
 
       </div>
 
-    </div>
+    </Transition>
 
-  </transition>
+  </Teleport>
 
 </template>
 
 <script setup>
 import {
   ref,
+  watch,
   onMounted,
   onUnmounted,
 } from 'vue';
@@ -140,9 +148,26 @@ const closePopup = () => {
   success.value = false;
 };
 
-/* EVENTS */
+/* ESC */
+
+const handleEscape = (event) => {
+
+  if (
+    event.key === 'Escape'
+    &&
+    isOpen.value
+  ) {
+
+    closePopup();
+  }
+};
 
 onMounted(() => {
+
+  window.addEventListener(
+    'keydown',
+    handleEscape
+  );
 
   window.addEventListener(
     'open-lead-popup',
@@ -153,9 +178,24 @@ onMounted(() => {
 onUnmounted(() => {
 
   window.removeEventListener(
+    'keydown',
+    handleEscape
+  );
+
+  window.removeEventListener(
     'open-lead-popup',
     openPopup
   );
+});
+
+/* BODY LOCK */
+
+watch(isOpen, (value) => {
+
+  document.body.style.overflow =
+    value
+      ? 'hidden'
+      : '';
 });
 
 /* SUBMIT */

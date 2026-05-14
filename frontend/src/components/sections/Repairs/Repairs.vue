@@ -2,190 +2,442 @@
 
   <section class="repairs">
 
+    <!-- BACKGROUND -->
+
+    <div class="repairs__background">
+
+      <img
+        src="/images/repairs.webp"
+        alt=""
+      />
+
+    </div>
+
+    <!-- OVERLAY -->
+
+    <div class="repairs__overlay"></div>
+
     <div class="container">
 
-      <!-- TOP -->
+      <div class="repairs__wrapper">
 
-      <div class="repairs__top">
+        <!-- HERO -->
 
-        <div class="repairs__heading">
+        <div class="repairs__hero">
 
-          <span class="repairs__label">
-            направления ремонта
-          </span>
+          <!-- LEFT -->
 
-          <h2 class="repairs__title">
-            ЧТО МЫ ЧИНИМ
-          </h2>
+          <div class="repairs__content">
 
-        </div>
+            <span class="repairs__label">
+              услуги
+            </span>
 
-        <div class="repairs__info">
+            <h2 class="repairs__title">
 
-          <p class="repairs__description">
-            Ремонтируем игровые приставки
-            и контроллеры. Чистка, пайка HDMI,
-            замена стиков и восстановление питания.
-          </p>
+              РЕМОНТ ЛЮБОЙ
+              <span>ТЕХНИКИ</span>
 
-          <div class="repairs__stats">
+            </h2>
 
-            <div class="repairs-stat">
+            <p class="repairs__description">
 
-              <strong>
-                1–2 дня
-              </strong>
+              Профессиональный ремонт
+              с гарантией. Работаем быстро,
+              качественно и честно.
 
-              <span>
-                средний срок ремонта
-              </span>
+            </p>
 
-            </div>
+            <a
+              href="#"
+              class="repairs__button"
+            >
 
-            <div class="repairs-stat">
-
-              <strong>
-                180 дней
-              </strong>
+              Полный прайс-лист
 
               <span>
-                гарантия на работы
+                ↗
               </span>
 
-            </div>
+            </a>
 
           </div>
 
         </div>
 
-      </div>
+        <!-- GRID -->
 
-      <!-- GRID -->
+        <div class="repairs__grid">
 
-      <div class="repairs__grid">
+          <!-- CARD -->
 
-        <!-- PS5 -->
+          <article class="repair-card">
 
-        <article class="repair-card">
+            <div class="repair-card__icon">
+              💻
+            </div>
 
-          <div class="repair-card__image">
+            <div class="repair-card__body">
 
-            <img
-              src="/images/tab_1.webp"
-              alt=""
-            />
+              <h3 class="repair-card__title">
+
+                Компьютеры
+                <br />
+                и ноутбуки
+
+              </h3>
+
+              <p class="repair-card__text">
+
+                Диагностика и ремонт
+                любой сложности
+
+              </p>
+
+              <div class="repair-card__price">
+
+                от
+                <strong>500 ₽</strong>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <!-- CARD -->
+
+          <article class="repair-card">
+
+            <div class="repair-card__icon">
+              📱
+            </div>
+
+            <div class="repair-card__body">
+
+              <h3 class="repair-card__title">
+
+                Телефоны
+                <br />
+                и смартфоны
+
+              </h3>
+
+              <p class="repair-card__text">
+
+                Замена экранов, батарей,
+                разъёмов и др.
+
+              </p>
+
+              <div class="repair-card__price">
+
+                от
+                <strong>800 ₽</strong>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <!-- CARD -->
+
+          <article class="repair-card">
+
+            <div class="repair-card__icon">
+              🖥
+            </div>
+
+            <div class="repair-card__body">
+
+              <h3 class="repair-card__title">
+
+                Телевизоры
+                <br />
+                и мониторы
+
+              </h3>
+
+              <p class="repair-card__text">
+
+                Ремонт подсветки,
+                матриц и плат
+
+              </p>
+
+              <div class="repair-card__price">
+
+                от
+                <strong>1 200 ₽</strong>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <!-- CARD -->
+
+          <article class="repair-card">
+
+            <div class="repair-card__icon">
+              📲
+            </div>
+
+            <div class="repair-card__body">
+
+              <h3 class="repair-card__title">
+
+                Планшеты
+                <br />
+                и iPad
+
+              </h3>
+
+              <p class="repair-card__text">
+
+                Замена стекла,
+                дисплея и аккумулятора
+
+              </p>
+
+              <div class="repair-card__price">
+
+                от
+                <strong>900 ₽</strong>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <!-- CARD -->
+
+          <article class="repair-card">
+
+            <div class="repair-card__icon">
+              🎮
+            </div>
+
+            <div class="repair-card__body">
+
+              <h3 class="repair-card__title">
+
+                Игровые приставки
+                <br />
+                и консоли
+
+              </h3>
+
+              <p class="repair-card__text">
+
+                PlayStation, Xbox,
+                Nintendo и другие
+
+              </p>
+
+              <div class="repair-card__price">
+
+                от
+                <strong>1 000 ₽</strong>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <!-- CARD -->
+
+          <article class="repair-card">
+
+            <div class="repair-card__icon">
+              🧺
+            </div>
+
+            <div class="repair-card__body">
+
+              <h3 class="repair-card__title">
+
+                Бытовая
+                техника
+
+              </h3>
+
+              <p class="repair-card__text">
+
+                Ремонт и обслуживание
+                бытовой техники
+
+              </p>
+
+              <div class="repair-card__price">
+
+                от
+                <strong>1 500 ₽</strong>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <!-- CARD -->
+
+          <article class="repair-card">
+
+            <div class="repair-card__icon">
+              🖨
+            </div>
+
+            <div class="repair-card__body">
+
+              <h3 class="repair-card__title">
+
+                Принтеры
+                <br />
+                и МФУ
+
+              </h3>
+
+              <p class="repair-card__text">
+
+                Диагностика,
+                заправка и ремонт
+
+              </p>
+
+              <div class="repair-card__price">
+
+                от
+                <strong>700 ₽</strong>
+
+              </div>
+
+            </div>
+
+          </article>
+
+          <!-- CARD -->
+
+          <article class="repair-card">
+
+            <div class="repair-card__icon">
+              •••
+            </div>
+
+            <div class="repair-card__body">
+
+              <h3 class="repair-card__title">
+                Другое
+              </h3>
+
+              <p class="repair-card__text">
+
+                Ремонтируем то,
+                что нужно вам
+
+              </p>
+
+              <div class="repair-card__price">
+
+                <strong>уточняйте</strong>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+        <!-- FEATURES -->
+
+        <div class="repairs__features">
+
+          <div class="repairs-feature">
+
+            <div class="repairs-feature__icon">
+              ✓
+            </div>
+
+            <div>
+
+              <strong>
+                Гарантия
+              </strong>
+
+              <span>
+                До 12 месяцев
+              </span>
+
+            </div>
 
           </div>
 
-          <div class="repair-card__overlay"></div>
+          <div class="repairs-feature">
 
-          <div class="repair-card__content">
+            <div class="repairs-feature__icon">
+              ⏱
+            </div>
 
-            <span class="repair-card__number">
-              01
-            </span>
+            <div>
 
-            <h3 class="repair-card__title">
-              PLAYSTATION 5
-            </h3>
+              <strong>
+                Быстро
+              </strong>
 
-            <ul class="repair-card__list">
+              <span>
+                Большинство ремонтов за 1 день
+              </span>
 
-              <li>HDMI</li>
-
-              <li>перегрев</li>
-
-              <li>чистка</li>
-
-              <li>охлаждение</li>
-
-            </ul>
+            </div>
 
           </div>
 
-        </article>
+          <div class="repairs-feature">
 
-        <!-- DUALSENSE -->
+            <div class="repairs-feature__icon">
+              ₽
+            </div>
 
-        <article class="repair-card">
+            <div>
 
-          <div class="repair-card__image">
+              <strong>
+                Честные цены
+              </strong>
 
-            <img
-              src="/images/tab_2.webp"
-              alt=""
-            />
+              <span>
+                Без скрытых доплат
+              </span>
 
-          </div>
-
-          <div class="repair-card__overlay"></div>
-
-          <div class="repair-card__content">
-
-            <span class="repair-card__number">
-              02
-            </span>
-
-            <h3 class="repair-card__title">
-              DUALSENSE
-            </h3>
-
-            <ul class="repair-card__list">
-
-              <li>дрифт</li>
-
-              <li>кнопки</li>
-
-              <li>триггеры</li>
-
-              <li>аккумуляторы</li>
-
-            </ul>
+            </div>
 
           </div>
 
-        </article>
+          <div class="repairs-feature">
 
-        <!-- XBOX -->
+            <div class="repairs-feature__icon">
+              👍
+            </div>
 
-        <article class="repair-card">
+            <div>
 
-          <div class="repair-card__image">
+              <strong>
+                Качество
+              </strong>
 
-            <img
-              src="/images/tab_3.webp"
-              alt=""
-            />
+              <span>
+                Оригинальные запчасти
+              </span>
 
-          </div>
-
-          <div class="repair-card__overlay"></div>
-
-          <div class="repair-card__content">
-
-            <span class="repair-card__number">
-              03
-            </span>
-
-            <h3 class="repair-card__title">
-              XBOX SERIES X
-            </h3>
-
-            <ul class="repair-card__list">
-
-              <li>чистка</li>
-
-              <li>питание</li>
-
-              <li>охлаждение</li>
-
-              <li>плата</li>
-
-            </ul>
+            </div>
 
           </div>
 
-        </article>
+        </div>
 
       </div>
 
@@ -196,5 +448,5 @@
 </template>
 
 <script setup>
-import './Repairs.scss';
+import './repairs.scss';
 </script>
