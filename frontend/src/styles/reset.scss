@@ -15,20 +15,24 @@ html {
 
 body {
   min-width: 320px;
-
-  background: #05070b;
+ 
 
   color: #fff;
 
   font-family:
-    'Inter',
+    'Tektur',
     sans-serif;
 
   text-rendering: optimizeLegibility;
 
   -webkit-font-smoothing: antialiased;
 }
-
+p{
+  font-family:
+    'Inter',
+    sans-serif;
+  
+}
 img,
 picture,
 video,

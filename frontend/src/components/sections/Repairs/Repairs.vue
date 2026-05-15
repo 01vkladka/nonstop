@@ -25,8 +25,6 @@
 
         <div class="repairs__hero">
 
-          <!-- LEFT -->
-
           <div class="repairs__content">
 
             <span class="repairs__label">
@@ -60,9 +58,10 @@
 
           <article class="repair-card">
 
-            <div class="repair-card__icon">
-              💻
-            </div>
+            <div
+              class="repair-card__bg"
+              style="background-image:url('/images/icon_1.webp')"
+            ></div>
 
             <div class="repair-card__body">
 
@@ -93,9 +92,10 @@
 
           <article class="repair-card">
 
-            <div class="repair-card__icon">
-              📱
-            </div>
+            <div
+              class="repair-card__bg"
+              style="background-image:url('/images/icon_2.webp')"
+            ></div>
 
             <div class="repair-card__body">
 
@@ -126,9 +126,10 @@
 
           <article class="repair-card">
 
-            <div class="repair-card__icon">
-              🖥
-            </div>
+            <div
+              class="repair-card__bg"
+              style="background-image:url('/images/icon_3.webp')"
+            ></div>
 
             <div class="repair-card__body">
 
@@ -159,9 +160,10 @@
 
           <article class="repair-card">
 
-            <div class="repair-card__icon">
-              📲
-            </div>
+            <div
+              class="repair-card__bg"
+              style="background-image:url('/images/icon_4.webp')"
+            ></div>
 
             <div class="repair-card__body">
 
@@ -192,9 +194,10 @@
 
           <article class="repair-card">
 
-            <div class="repair-card__icon">
-              🎮
-            </div>
+            <div
+              class="repair-card__bg"
+              style="background-image:url('/images/icon_5.webp')"
+            ></div>
 
             <div class="repair-card__body">
 
@@ -225,9 +228,10 @@
 
           <article class="repair-card">
 
-            <div class="repair-card__icon">
-              🧺
-            </div>
+            <div
+              class="repair-card__bg"
+              style="background-image:url('/images/icon_6.webp')"
+            ></div>
 
             <div class="repair-card__body">
 
@@ -257,9 +261,10 @@
 
           <article class="repair-card">
 
-            <div class="repair-card__icon">
-              🖨
-            </div>
+            <div
+              class="repair-card__bg"
+              style="background-image:url('/images/icon_7.webp')"
+            ></div>
 
             <div class="repair-card__body">
 
@@ -290,9 +295,10 @@
 
           <article class="repair-card">
 
-            <div class="repair-card__icon">
-              •••
-            </div>
+            <div
+              class="repair-card__bg"
+              style="background-image:url('/images/icon_8.webp')"
+            ></div>
 
             <div class="repair-card__body">
 
@@ -323,11 +329,12 @@
 
           <div class="repairs-feature">
 
-            <div class="repairs-feature__icon">
-              ✓
-            </div>
+            <div
+              class="repairs-feature__bg"
+              style="background-image:url('/images/icon_9.webp')"
+            ></div>
 
-            <div>
+            <div class="repairs-feature__content">
 
               <strong>
                 Гарантия
@@ -343,11 +350,12 @@
 
           <div class="repairs-feature">
 
-            <div class="repairs-feature__icon">
-              ⏱
-            </div>
+            <div
+              class="repairs-feature__bg"
+              style="background-image:url('/images/icon_10.webp')"
+            ></div>
 
-            <div>
+            <div class="repairs-feature__content">
 
               <strong>
                 Быстро
@@ -363,11 +371,12 @@
 
           <div class="repairs-feature">
 
-            <div class="repairs-feature__icon">
-              ₽
-            </div>
+            <div
+              class="repairs-feature__bg"
+              style="background-image:url('/images/icon_11.webp')"
+            ></div>
 
-            <div>
+            <div class="repairs-feature__content">
 
               <strong>
                 Честные цены
@@ -383,11 +392,12 @@
 
           <div class="repairs-feature">
 
-            <div class="repairs-feature__icon">
-              👍
-            </div>
+            <div
+              class="repairs-feature__bg"
+              style="background-image:url('/images/icon_12.webp')"
+            ></div>
 
-            <div>
+            <div class="repairs-feature__content">
 
               <strong>
                 Качество
