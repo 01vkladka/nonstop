@@ -48,19 +48,6 @@
 
             </p>
 
-            <a
-              href="#"
-              class="repairs__button"
-            >
-
-              Полный прайс-лист
-
-              <span>
-                ↗
-              </span>
-
-            </a>
-
           </div>
 
         </div>
@@ -95,10 +82,7 @@
               </p>
 
               <div class="repair-card__price">
-
-                от
-                <strong>500 ₽</strong>
-
+                от <strong>500 ₽</strong>
               </div>
 
             </div>
@@ -131,10 +115,7 @@
               </p>
 
               <div class="repair-card__price">
-
-                от
-                <strong>800 ₽</strong>
-
+                от <strong>300 ₽</strong>
               </div>
 
             </div>
@@ -167,10 +148,7 @@
               </p>
 
               <div class="repair-card__price">
-
-                от
-                <strong>1 200 ₽</strong>
-
+                от <strong>1000 ₽</strong>
               </div>
 
             </div>
@@ -203,10 +181,7 @@
               </p>
 
               <div class="repair-card__price">
-
-                от
-                <strong>900 ₽</strong>
-
+                от <strong>400 ₽</strong>
               </div>
 
             </div>
@@ -239,10 +214,7 @@
               </p>
 
               <div class="repair-card__price">
-
-                от
-                <strong>1 000 ₽</strong>
-
+                от <strong>500 ₽</strong>
               </div>
 
             </div>
@@ -274,10 +246,7 @@
               </p>
 
               <div class="repair-card__price">
-
-                от
-                <strong>1 500 ₽</strong>
-
+                от <strong>800 ₽</strong>
               </div>
 
             </div>
@@ -310,10 +279,7 @@
               </p>
 
               <div class="repair-card__price">
-
-                от
-                <strong>700 ₽</strong>
-
+                от <strong>300 ₽</strong>
               </div>
 
             </div>
@@ -342,9 +308,7 @@
               </p>
 
               <div class="repair-card__price">
-
-                <strong>уточняйте</strong>
-
+                по запросу
               </div>
 
             </div>
@@ -448,5 +412,9 @@
 </template>
 
 <script setup>
-import './repairs.scss';
+const openPopup = () => {
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent('open-lead-popup'));
+  }
+};
 </script>

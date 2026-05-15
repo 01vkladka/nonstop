@@ -318,6 +318,32 @@
   }
 }
 
+.repair-card__cta {
+  background:
+    linear-gradient(135deg, #ff9b33, #ef7d10);
+
+  color: #fff;
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 12px 20px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: transform .2s ease, box-shadow .2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 16px rgba(239, 125, 16, .3);
+  }
+}
+
 /* FEATURES */
 
 .repairs__features {
@@ -399,4 +425,41 @@
   justify-content: center;
 
   font-size: 24px;
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+  .repairs {
+    padding:
+      60px
+      0;
+  }
+
+  .repairs-feature {
+    min-height: auto;
+
+    padding: 18px;
+
+    border-radius: 20px;
+
+    strong {
+      font-size: 16px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .repairs-feature__icon {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 14px;
+
+    font-size: 18px;
+  }
+
 }

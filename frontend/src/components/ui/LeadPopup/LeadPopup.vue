@@ -114,8 +114,6 @@ import {
   onUnmounted,
 } from 'vue';
 
-import './lead-popup.scss';
-
 /* STATE */
 
 const isOpen = ref(false);

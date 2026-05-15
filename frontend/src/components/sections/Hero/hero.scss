@@ -288,6 +288,28 @@
   font-weight: 700;
 }
 
+.hero__feature-link {
+  display: block;
+
+  background: none;
+  border: none;
+
+  color: #ef8a22;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  transition: color .2s ease;
+
+  &:hover {
+    color: #ff9b33;
+  }
+}
+
 /* LAPTOP */
 
 @media (max-width: 1600px) {
@@ -478,6 +500,30 @@
 
   .hero__title {
     font-size: 54px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .hero {
+    padding: 100px 0 60px;
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__title {
+    font-size: 38px;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+  }
+
+  .hero__description {
+    font-size: 14px;
+    margin-bottom: 20px;
+    max-width: 100%;
   }
 
 }

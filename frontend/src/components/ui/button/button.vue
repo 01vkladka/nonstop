@@ -10,8 +10,6 @@
 </template>
 
 <script setup>
-import './button.scss';
-
 defineProps({
 
   text: {

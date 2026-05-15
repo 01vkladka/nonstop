@@ -12,6 +12,8 @@ import '@components/ui/LeadPopup/lead-popup.scss';
 import '@components/layout/header.scss';
 
 import LeadPopup from '@components/ui/LeadPopup/LeadPopup.vue';
+import CookiesPopup from '@components/ui/CookiesPopup/CookiesPopup.vue';
+import PrivacyPopup from '@components/ui/CookiesPopup/PrivacyPopup.vue';
 ---
 
 <!doctype html>
@@ -53,9 +55,11 @@ import LeadPopup from '@components/ui/LeadPopup/LeadPopup.vue';
 
     <slot />
 
-    <!-- GLOBAL POPUP -->
+    <!-- GLOBAL POPUPS -->
 
     <LeadPopup client:only="vue" />
+    <CookiesPopup client:only="vue" />
+    <PrivacyPopup client:only="vue" />
 
   </body>
 

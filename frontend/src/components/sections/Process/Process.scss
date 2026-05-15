@@ -98,6 +98,15 @@
   flex-direction: column;
 
   gap: 24px;
+
+  padding: 28px;
+
+  background:
+    rgba(255,255,255,.6);
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(0,0,0,.04);
 }
 
 .process-step__icon {
@@ -428,6 +437,8 @@
   }
 
   .process__contact {
+    display: flex;
+    flex-direction: column;
     border-radius: 26px;
   }
 
@@ -436,6 +447,10 @@
     padding:
       28px
       22px;
+  }
+
+  .process-contact__map {
+    display: none;
   }
 
   .process-contact__title {
@@ -475,6 +490,103 @@
 
   .process-contact__map iframe {
     min-height: 340px;
+  }
+
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+  .process {
+    padding:
+      16px
+      0
+      40px;
+  }
+
+  .process__steps {
+    padding:
+      20px
+      16px;
+
+    border-radius: 20px;
+  }
+
+  .process__title {
+    font-size: 38px;
+
+    letter-spacing: -1px;
+  }
+
+  .process__subtitle {
+    font-size: 12px;
+  }
+
+  .process-step__content {
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .process__contact {
+    border-radius: 20px;
+  }
+
+  .process-contact__left,
+  .process-contact__info {
+    padding:
+      20px
+      16px;
+  }
+
+  .process-contact__label {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+
+  .process-contact__title {
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+  }
+
+  .process-contact__text {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  .process-contact__button {
+    height: 52px;
+    padding: 0 20px;
+    font-size: 15px;
+  }
+
+  .process-contact__item {
+    gap: 12px;
+
+    strong {
+      font-size: 16px;
+    }
+
+    span {
+      font-size: 13px;
+    }
+  }
+
+  .process-contact__icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 12px;
+    font-size: 18px;
   }
 
 }

@@ -52,5 +52,4 @@
 </template>
 
 <script setup>
-import './hero-info.scss';
 </script>

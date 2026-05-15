@@ -288,5 +288,4 @@
 </template>
 
 <script setup>
-import './Process.scss';
 </script>

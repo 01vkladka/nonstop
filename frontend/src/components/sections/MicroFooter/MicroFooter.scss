@@ -285,3 +285,61 @@
   }
 
 }
+
+@media (max-width: 480px) {
+
+  .micro-footer {
+    padding:
+      16px
+      0
+      24px;
+  }
+
+  .micro-footer__wrapper {
+    gap: 20px;
+    padding-top: 16px;
+  }
+
+  .micro-footer__logo-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .micro-footer__logo-text {
+    strong {
+      font-size: 20px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .micro-footer__copyright {
+    font-size: 12px;
+  }
+
+  .micro-footer__nav {
+    gap: 12px;
+
+    a {
+      font-size: 13px;
+    }
+  }
+
+  .micro-footer__dev {
+    gap: 6px;
+
+    span {
+      font-size: 12px;
+    }
+
+    a {
+      height: 40px;
+      padding: 0 16px;
+      font-size: 13px;
+    }
+  }
+
+}
